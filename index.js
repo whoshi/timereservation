@@ -7,7 +7,7 @@ $(function ()
             dateFormat: 'yy/mm/dd',
 	    showButtonPanel: true,
             currentText: "今日",
-            closeText: "閉じる"
+            closeText: "閉じる",
         });
 	
     });
