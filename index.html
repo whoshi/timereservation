@@ -67,14 +67,7 @@
      
     </style>
     
-    <script>
-       let select = document.querySelector('[name="rsvtimezone"]');
-
-       select.onchange = event => { 
-       
-       alert(select.selectedIndex);
-       }
-    </script>
+    
 </head>
 
 <body>
@@ -190,7 +183,14 @@
     </form>
   
 </div>
-    
+    <script>
+       let select = document.querySelector('[name="rsvtimezone"]');
+
+       select.onchange = event => { 
+       
+       alert(select.selectedIndex);
+       }
+    </script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="https://rawgit.com/jquery/jquery-ui/master/ui/i18n/datepicker-ja.js"></script>
