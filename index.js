@@ -8,6 +8,16 @@ $(function ()
         });
 	
     });
+    // 時間帯選択
+    $(function () {
+	let select = document.querySelector('[name="rsvtimezone"]');
+
+        select.onchange = event => { 
+        
+	alert('ActionIndex ' + select.selectedIndex);
+        ｝
+	
+    });
     // 送信
     $('form').submit(function () 
     {
