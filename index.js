@@ -4,10 +4,6 @@ $(function ()
     $(function () {
 	$.datepicker.setDefaults($.datepicker.regional["ja"]);    
         $('input[name="date"]').datepicker({
-            
-	    showButtonPanel: true,
-            currentText: "今日",
-            closeText: "閉じる",
             dateFormat: 'yy/mm/dd',
         });
 	
