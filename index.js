@@ -2,9 +2,11 @@ $(function ()
 {
     // カレンダー
     $(function () {
+	$.datepicker.setDefaults($.datepicker.regional["ja"]);    
         $('input[name="date"]').datepicker({
             dateFormat: 'yy/mm/dd',
         });
+	
     });
     // 送信
     $('form').submit(function () 
