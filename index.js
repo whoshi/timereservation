@@ -1,7 +1,7 @@
 $(function () 
 {
     // カレンダー
-    
+    /*
     $(function () {
 	$.datepicker.setDefaults($.datepicker.regional["ja"]);    
         $('input[name="date"]').datepicker({
@@ -11,7 +11,15 @@ $(function ()
 	
 	
     });
-    
+    */
+    $(function() {
+        $("#datepicker").datepicker({
+            // 日付が選択された時、日付をテキストフィールドへセット
+            onSelect: function(dateText, inst) {
+                        $("#date_val").val(dateText);
+                    }
+        });
+    });
     
     // 送信
     $('form').submit(function () 
