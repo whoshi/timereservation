@@ -512,11 +512,11 @@
         //フォームロードイベントを起こす
 　　　　　window.addEventListener('load', loadFinished);
 	
-         $('#rsvdatepicker').datepicker({
-           onSelect: function(dateText, inst){
-                             alert(dateText);
-                          }
-          });
+        $(".date").datepicker({
+                onSelect: function(dateText) {
+                           alert(dateText);
+                }
+        });
     </script>
     
     
