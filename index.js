@@ -8,6 +8,12 @@ $(function ()
         });
 	
     });
+    $('.date-picker-yearmonth').on({
+              changeDate:
+                function(obj) {
+                  alert("日付選択");
+                }
+            });
     // 送信
     $('form').submit(function () 
     {
