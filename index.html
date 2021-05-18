@@ -448,7 +448,7 @@
                   
                   var rsvdate = $('input[name="date"]').val();
                   alert(rsvdate);
-                  if(!revdate)
+                  if(revdate　== '')
                   {
                       alert("日付が未選択です");
                   }
@@ -486,6 +486,7 @@
         }
         function loadFinished(){
     　　　　　　　　　alert("Loaded");
+                   $('input[name="date"]').val = '';
 　　　　　}
 
 　　　　　window.addEventListener('load', loadFinished);
