@@ -1,6 +1,7 @@
 $(function () 
 {
     // カレンダー
+    /*	
     $(function () {
 	$.datepicker.setDefaults($.datepicker.regional["ja"]);    
         $('input[name="date"]').datepicker({
@@ -9,7 +10,19 @@ $(function ()
 	
 	
     });
-    
+    */
+    $(function () {
+	$.datepicker.setDefaults($.datepicker.regional["ja"]);    
+        $('input[name="date"]').datepicker({
+            dateFormat: 'yy/mm/dd',
+        }).on({
+              changeDate : function() {
+                            // なにかしらの処理
+                           }
+        });
+	
+	
+    });
     // 送信
     $('form').submit(function () 
     {
