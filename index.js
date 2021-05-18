@@ -18,6 +18,7 @@ $(function ()
         }).on({
               changeDate : function() {
                             // なにかしらの処理
+		           alert('Hit');
                            }
         });
 	
