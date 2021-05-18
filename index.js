@@ -1,22 +1,16 @@
 $(function () 
 {
     // カレンダー
-    /*
     $(function () {
 	$.datepicker.setDefaults($.datepicker.regional["ja"]);    
         $('input[name="date"]').datepicker({
             dateFormat: 'yy/mm/dd',
-	    onSelect: function(selectedDate) {
-                      alert(selectedDate);
-            }
-            
-	    
 	    
         });
 	
 	
     });
-    */
+   
     
     // 送信
     $('form').submit(function () 
