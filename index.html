@@ -484,12 +484,13 @@
 
             
         }
+        //Formロードイベント
         function loadFinished(){
-    　　　　　　　　　alert("Loaded");
+    　　　　　　　　　//DataPickerの初期値に本日日付をセット
                    $(':text').datepicker();
                    $(':text').datepicker('setDate', new Date());
 　　　　　}
-
+        //フォームロードイベントを起こす
 　　　　　window.addEventListener('load', loadFinished);
     </script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
