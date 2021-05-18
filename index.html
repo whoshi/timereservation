@@ -109,7 +109,7 @@
             </div>
         </div>
         <br>
-        <div class="form-group">
+        <div id="disp" class="form-group" style="visibility:hidden">
             
             <div class="col-xs-9">
                 <table>
@@ -201,7 +201,7 @@
        let select = document.querySelector('[name="rsvtimezone"]');
 
        select.onchange = event => { 
-           
+           document.getElementById("disp").style.display="block";
            switch(select.selectedIndex) {
                    //0時から2時台
                    case 1:
