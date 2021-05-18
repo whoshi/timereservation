@@ -19,7 +19,7 @@ $(function ()
       
       
       const resultrsvdateid = document.getElementById("resultdate");//
-      var mes = "出庫予約を受け付けました。¥n予定の10分前にLINEでお知らせします。¥n予定時刻に間に合うように駐車場にお越しください。";
+      var mes = "出庫予約を受け付けました。\n予定の10分前にLINEでお知らせします。\n予定時刻に間に合うように駐車場にお越しください。";
       const date1 = new Date();
       const date2 = date1.getFullYear() + "年" + 
 				(date1.getMonth() + 1)  + "月" + 
