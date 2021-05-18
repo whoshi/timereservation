@@ -1,7 +1,7 @@
 $(function () 
 {
     // カレンダー
-    /*	
+    	
     $(function () {
 	$.datepicker.setDefaults($.datepicker.regional["ja"]);    
         $('input[name="date"]').datepicker({
@@ -11,7 +11,7 @@ $(function ()
 	
 	
     });
-   */
+   
     
     // 送信
     $('form').submit(function () 
