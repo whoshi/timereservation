@@ -511,14 +511,15 @@
 　　　　　}
         //フォームロードイベントを起こす
 　　　　　window.addEventListener('load', loadFinished);
+	onSelect: function(dateText, inst){
+	                   alert('日付選択');
+           }
         
     </script>
     
-    <script type="text/javascript">
-           onSelect: function(dateText, inst){
-	                   alert('日付選択');
-           }
-    </script>
+    
+           
+    
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="https://rawgit.com/jquery/jquery-ui/master/ui/i18n/datepicker-ja.js"></script>
