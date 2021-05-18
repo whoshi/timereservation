@@ -8,7 +8,7 @@ $(function ()
             dateFormat: 'yy/mm/dd',
 	    onSelect: function(date, obj) {
                   alert(date);
-            },
+            }
 	    
         });
 	
