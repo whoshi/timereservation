@@ -511,15 +511,14 @@
 　　　　　}
         //フォームロードイベントを起こす
 　　　　　window.addEventListener('load', loadFinished);
-	jQuery(document).ready(function() {
-                 $( "#datepicker" ).datepicker({
-                                     inline: true,
-                                     onSelect: function (date) {
-                                     alert(date);
-        }
+	
     });
 });
-        
+   $('#rsvdatepicker').datepicker({
+           onSelect: function(dateText, inst){
+           alert(dateText);
+  }
+});
     </script>
     
     
