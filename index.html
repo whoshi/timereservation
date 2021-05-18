@@ -513,6 +513,16 @@
 　　　　　window.addEventListener('load', loadFinished);
         
     </script>
+    <script src="/js/jquery-1.11.1.js"></script>
+        <script src="/js/formdaterangepicker.js"></script>
+        <script type="text/javascript">
+            $('.date-picker-yearmonth').on({
+              changeDate:
+                function(obj) {
+                    alert('日付選択');
+                }
+            });
+    </script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="https://rawgit.com/jquery/jquery-ui/master/ui/i18n/datepicker-ja.js"></script>
