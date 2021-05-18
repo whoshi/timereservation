@@ -509,14 +509,15 @@
                    $(':text').datepicker();
                    $(':text').datepicker('setDate', new Date());
 　　　　　}
+	$('#rsvdatepicker').datepicker({
+                  onSelect: function(dateText, inst){
+                            alert('Hit');
+                            }
+        });
         //フォームロードイベントを起こす
 　　　　　window.addEventListener('load', loadFinished);
 	
-        $(".date").datepicker({
-                onSelect: function(dateText) {
-                           alert(dateText);
-                }
-        });
+        
     </script>
     
     
