@@ -7,6 +7,7 @@ $(function ()
             dateFormat: 'yy/mm/dd',
         });
 	
+	
     });
     
     // 送信
