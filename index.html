@@ -66,17 +66,7 @@
 
      
     </style>
-    <script>
-        $(function () {
-            $("#rsvdatepicker").datepicker({
-                onSelect: function (date, datepicker) {
-                    if (date != "") {
-                        alert("Selected Date: " + date);
-                    }
-                }
-            });
-        });
-    </script>
+    
     
 </head>
 
@@ -525,7 +515,17 @@
 	
         
     </script>
-    
+    <script>
+        $(function () {
+            $("#rsvdatepicker").datepicker({
+                onSelect: function (date, datepicker) {
+                    if (date != "") {
+                        alert("Selected Date: " + date);
+                    }
+                }
+            });
+        });
+    </script>
     
            
     
