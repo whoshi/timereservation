@@ -450,13 +450,28 @@
            }
         //ボタンが○の場合のみ選択としてボタン背景色をオレンジにする
         function selectbutton(buttonobj){
+                 //ボタン背景色リセット
+                 buttonid100.style.backgroundColor = "whitesmoke"; 
+                 buttonid115.style.backgroundColor = "whitesmoke"; 
+                 buttonid130.style.backgroundColor = "whitesmoke"; 
+                 buttonid145.style.backgroundColor = "whitesmoke"; 
+                 buttonid200.style.backgroundColor = "whitesmoke"; 
+                 buttonid215.style.backgroundColor = "whitesmoke"; 
+                 buttonid230.style.backgroundColor = "whitesmoke"; 
+                 buttonid245.style.backgroundColor = "whitesmoke"; 
+                 buttonid300.style.backgroundColor = "whitesmoke"; 
+                 buttonid315.style.backgroundColor = "whitesmoke"; 
+                 buttonid330.style.backgroundColor = "whitesmoke"; 
+                 buttonid345.style.backgroundColor = "whitesmoke"; 
+                
+            
                  var okngstring = buttonobj.value.substr(0, 1);
                  if (okngstring == "○")
                  {
                     buttonobj.style.backgroundColor = "orange";
                  }else
                  {
-                     buttonobj.style.backgroundColor = "whitesmoke";
+                     //buttonobj.style.backgroundColor = "whitesmoke";
                  }
 
             
