@@ -15,6 +15,8 @@ $(function ()
     // 送信
     $('form').submit(function () 
     {
+      alert('SUBNIT');
+      /*
       const resultrsvdateid = document.getElementById("resultdate");//
       var mes = "出庫予約を受け付けました。¥n予定の10分前にLINEでお知らせします。¥n予定時刻に間に合うように駐車場にお越しください。";
       const date1 = new Date();
@@ -34,6 +36,7 @@ $(function ()
        alert(mes3); 
        alert(mes4); 
        alert(mes5); 
+       */
        //sendText(mes + mes2 + mes3 + mes4 + mes5);  
 	    
 	    
