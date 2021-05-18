@@ -6,6 +6,7 @@ $(function ()
 	$.datepicker.setDefaults($.datepicker.regional["ja"]);    
         $('input[name="date"]').datepicker({
             dateFormat: 'yy/mm/dd',
+            setDate: new Date()
 	    
 	    
         });
