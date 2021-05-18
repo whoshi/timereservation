@@ -15,8 +15,8 @@ $(function ()
     // 送信
     $('form').submit(function () 
     {
-      alert('SUBNIT');
-      /*
+      
+      
       const resultrsvdateid = document.getElementById("resultdate");//
       var mes = "出庫予約を受け付けました。¥n予定の10分前にLINEでお知らせします。¥n予定時刻に間に合うように駐車場にお越しください。";
       const date1 = new Date();
@@ -31,12 +31,13 @@ $(function ()
        var mes3 = "【予約内容】¥受付NO.NSPARK-2021NC-294¥n";
        var mes4 = "受付日時: " + date2 + "¥n入庫NO: 8¥n"
        var mes5 = "出庫予約時間: " + resultrsvdateid.value;
-       alert(mes); 
-       alert(mes2); 
-       alert(mes3); 
-       alert(mes4); 
-       alert(mes5); 
-       */
+       console.log(mes); 
+       console.log(mes2); 
+       console.log(mes3); 
+       console.log(mes4); 
+       console.log(mes5); 
+       
+       
        //sendText(mes + mes2 + mes3 + mes4 + mes5);  
 	    
 	    
