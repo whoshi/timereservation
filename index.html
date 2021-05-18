@@ -201,7 +201,7 @@
        let select = document.querySelector('[name="rsvtimezone"]');
 
        select.onchange = event => { 
-           document.getElementById("disp").style.display="block";
+           document.getElementById("disp").style.visibility = "visible";
            switch(select.selectedIndex) {
                    //0時から2時台
                    case 1:
