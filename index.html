@@ -184,10 +184,11 @@
   
 </div>
     <script>
-       const buttonid100 = document.getElementById("id100");
-    　 const buttonid115 = document.getElementById("id115");
-    　　const buttonid130 = document.getElementById("id130");
-    　　const buttonid145 = document.getElementById("id145");
+       //時間ボタンオブジェクト 
+       const buttonid100 = document.getElementById("id100");//xx:00
+    　 const buttonid115 = document.getElementById("id115");//xx:15
+    　　const buttonid130 = document.getElementById("id130");//xx:30
+    　　const buttonid145 = document.getElementById("id145");//xx:45
     　　const buttonid200 = document.getElementById("id200");
     　　const buttonid215 = document.getElementById("id215");
     　　const buttonid230 = document.getElementById("id230");
@@ -196,12 +197,13 @@
     　　const buttonid315 = document.getElementById("id315");
     　　const buttonid330 = document.getElementById("id330");
     　　const buttonid345 = document.getElementById("id345");
-    　　                    
+    　　//時間帯選択                    
        let select = document.querySelector('[name="rsvtimezone"]');
 
        select.onchange = event => { 
            
            switch(select.selectedIndex) {
+                   //0時から2時台
                    case 1:
                            
     　　                    buttonid100.value = "○００：００";
@@ -229,6 +231,7 @@
     　　                    buttonid345.value = "○０２：４５";
     　　                   
                            break;
+                   //3時から5時台
                    case 2:
                            buttonid100.value = "○０３：００";
                           
@@ -254,6 +257,7 @@
                            
     　　                    buttonid345.value = "○０５：４５";
                            break;
+                   //6時から8時台
                    case 3:
                            buttonid100.value = "☓０６：００";
                           
@@ -279,6 +283,7 @@
                            
     　　                    buttonid345.value = "○０８：４５";
                            break;
+                   //9時から11時台
                    case 4:
                            buttonid100.value = "☓０９：００";
                           
@@ -304,6 +309,7 @@
                            
     　　                    buttonid345.value = "○１１：４５";
                            break;
+                   //12時から14時台
                    case 5:
                            buttonid100.value = "☓１２：００";
                           
@@ -329,6 +335,7 @@
                            
     　　                    buttonid345.value = "○１４：４５";
                            break;
+                   //15時から17時台
                    case 6:
                            buttonid100.value = "☓１５：００";
                           
@@ -354,6 +361,7 @@
                            
     　　                    buttonid345.value = "○１７：４５";
                            break;
+                   //18時から20時台
                    case 7:
                            buttonid100.value = "☓１８：００";
                           
@@ -379,6 +387,7 @@
                            
     　　                    buttonid345.value = "○２０：４５";
                            break;
+                   //21時から23時台
                    case 8:
                            buttonid100.value = "☓２１：００";
                           
@@ -419,12 +428,13 @@
            
     　　     
        }
+       //ボタンID毎の押下処理
        function getId(ele){
                   
                   var id_value = ele.id; // eleのプロパティとしてidを取得
                   
                   //alert(id_value);
-                  alert(buttonid100.value);
+                  //alert(buttonid100.value);
                   //var result1 = str.substr(0, 3);
                   //toString()
                   //var bid = "button" + id_value.toString();
@@ -432,7 +442,9 @@
                   //var okng = bid.substr(0, 1);
                   //alert(okng);
                   //selectbutton(bid);
-                  
+           　　　　const buttonid = document.getElementById(id_value);//
+                  selectbutton(buttonid);
+                  /*
                   switch(id_value) {
                    case "id100":
                           //var okng = buttonid100.value.substr(0, 1);
@@ -452,9 +464,10 @@
                           break;
                           
                   }
-                  
+                  */
                   
            }
+        //ボタンが○の場合のみ選択としてボタン背景色をオレンジにする
         function selectbutton(buttonobj){
                  var okngstring = buttonobj.value.substr(0, 1);
                  if (okngstring == "○")
