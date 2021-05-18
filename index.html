@@ -171,9 +171,9 @@
             <table> 
 　　　　　　　　　　　<tr>
                       <td><pre>     </pre></td>
-                      <label id="resultdatalabel" class="formmemo-label" for="input_customername"> </label>
+                      <label id="resultdatelabel" class="formmemo-label" for="input_customername"> </label>
                       <td><pre>          </pre></td>
-                      <label id="resultdata" class="formmemo-label" for="input_customername"> </label>
+                      <label id="resultdate" class="formmemo-label" for="input_customername"> </label>
                   </tr>
                 </table>
             
@@ -458,7 +458,14 @@
            　　　　const buttonid = document.getElementById(id_value);//
                   selectbutton(buttonid);
                   
-                  //var rsvdate = $('input[name="date"]').val();
+                  var rsvdate = $('input[name="date"]').val();
+                  const resultrsvdatelabelid = document.getElementById("resultdatelabel");//
+                  const resultrsvdateid = document.getElementById("resultdate");//
+                  resultrsvdatelabelid.value = "予約日時 ----> ";
+                  resultrsvdateid.value = rsvdate;
+                  
+                  
+                  
                   
                   
                   
