@@ -486,8 +486,8 @@
         }
         function loadFinished(){
     　　　　　　　　　alert("Loaded");
-                   $("#rsvdatepicker").datepicker("option", "dateFormat", 'yy/mm/dd' );
-                   $("#rsvdatepicker").datepicker("setDate", "2021/05/18");
+                   $(':text').datepicker();
+                   $(':text').datepicker('setDate', new Date());
 　　　　　}
 
 　　　　　window.addEventListener('load', loadFinished);
