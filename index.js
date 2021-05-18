@@ -28,15 +28,11 @@ $(function ()
 				date1.getMinutes() + "分";
 	
 	// 2020年2月1日20時55分
-       var mes2 = "------------------------------¥n";
+       var mes2 = "----------------------------------------¥n";
        var mes3 = "【予約内容】¥受付NO.NSPARK-2021NC-294¥n";
        var mes4 = "受付日時: " + date2 + "¥n入庫NO: 8¥n"
        var mes5 = "出庫予約時間: " + resultrsvdateid.value;
-       console.log(mes); 
-       console.log(mes2); 
-       console.log(mes3); 
-       console.log(mes4); 
-       console.log(mes5); 
+       alert(mes + mes2 + mes3 + mes4 + mes5);
        
        
        //sendText(mes + mes2 + mes3 + mes4 + mes5);  
