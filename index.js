@@ -42,7 +42,7 @@ $(function ()
 	    
       //sendText(inputdata);//To LINE 送信
       //liff.closeWindow(); 
-      
+      return false;	
       
 });
 
