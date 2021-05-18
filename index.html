@@ -511,9 +511,14 @@
 　　　　　}
         //フォームロードイベントを起こす
 　　　　　window.addEventListener('load', loadFinished);
-	onSelect: function(dateText, inst){
-	                   alert('日付選択');
-           }
+	jQuery(document).ready(function() {
+                 $( "#rsvdatepicker" ).datepicker({
+                                     inline: true,
+                                     onSelect: function (date) {
+                                     alert(date);
+        }
+    });
+});
         
     </script>
     
