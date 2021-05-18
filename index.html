@@ -427,10 +427,11 @@
                   alert(buttonid100.value);
                   //var result1 = str.substr(0, 3);
                   //toString()
-                  var bid = "button" + id_value.toString() + ".value";
+                  var bid = "button" + id_value.toString();
                   alert(bid);
-                  var okng = bid.substr(0, 1);
-                  alert(okng);
+                  //var okng = bid.substr(0, 1);
+                  //alert(okng);
+                  selectbutton(bid);
                   /*
                   switch(id_value) {
                    case "id100":
@@ -454,7 +455,7 @@
                   */
                   
            }
-        function selectbutton(okngstring,buttonobj){
+        function selectbutton(buttonobj){
                  var okngstring = buttonobj.value.substr(0, 1);
                  if (okngstring == "○")
                  {
