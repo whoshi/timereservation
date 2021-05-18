@@ -429,24 +429,33 @@
                   switch(id_value) {
                    case "id100":
                           var okng = buttonid100.value.substr(0, 1);
-                          if (okng == "○")
-                          {
-                              buttonid100.style.backgroundColor = "orange";
-                          }
-
+                          //if (okng == "○")
+                          //{
+                          //    buttonid100.style.backgroundColor = "orange";
+                          //}
+                          selectbutton(okng,buttonid100);
                           break;
                    case "id115":
                           var okng = buttonid115.value.substr(0, 1);
-                          if (okng == "○")
-                          {
-                              buttonid115.style.backgroundColor = "orange";
-                          }
-
+                          //if (okng == "○")
+                          //{
+                          //    buttonid115.style.backgroundColor = "orange";
+                          //}
+                          selectbutton(okng,buttonid115);
                           break;
                           
                   }
                   
            }
+        function selectbutton(okngstring,buttonobj){
+                 var okngstring = buttonobj.value.substr(0, 1);
+                 if (okng == "○")
+                 {
+                    buttonobj.style.backgroundColor = "orange";
+                 }
+
+            
+        }
     </script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
