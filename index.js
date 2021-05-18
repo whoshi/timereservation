@@ -29,8 +29,8 @@ $(function ()
        var mes3 = "【予約内容】¥受付NO.NSPARK-2021NC-294¥n";
        var mes4 = "受付日時: " + date2 + "¥n入庫NO: 8¥n"
        var mes5 = "出庫予約時間: " + resultrsvdateid.value;
-	    
-       sendText(mes + mes2 + mes3 + mes4 + mes5);  
+       alert(mes + mes2 + mes3 + mes4 + mes5); 
+       //sendText(mes + mes2 + mes3 + mes4 + mes5);  
 	    
 	    
       //sendText(inputdata);//To LINE 送信
