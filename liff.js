@@ -91,11 +91,9 @@ function sendMessages(textmes) {
         type: 'text',
         text: 'Hello, World!'
       }
-    ])
-      .then(() => {
+    ]).then(() => {
         
-      })
-      .catch((err) => {
+      }).catch((err) => {
         window.alert('Failed to send message ' + error);
       });
 }
