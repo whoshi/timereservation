@@ -46,6 +46,7 @@ function sendMessages(text) {
 
 // Webブラウザからメッセージ送信
 function shareTargetPicker(text) {
+    alert('Picker');
     liff.shareTargetPicker([{
         'type': 'text',
         'text': text
