@@ -34,12 +34,14 @@ function sendText(text) {
 
 
 function sendMessages(text) {
+    alert(text);
     var data = {
                 type: "text",
                 text: text,
     };
-    liff.sendMessages([ data ]).then(function () {
-        
+    alert(data);
+    liff.sendMessages([data]).then(function () {
+        liff.closeWindow();
     }).catch(function (error) {
         window.alert('Failed to send message ' + error);
         liff.closeWindow();
