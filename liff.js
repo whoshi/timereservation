@@ -31,60 +31,18 @@ function sendText(text) {
         alert(text);
         
         sendMessages(text);
-        
+        //liff.closeWindow();
     }
 }
-//{
-//        'type': 'text',
-//        'text': text
-//    }
 function sendMessages(text) {
-    liff.sendMessages([{
-  "type": "flex",
-  "altText": "Flex Message",
-  "contents": {
-    "type": "bubble",
-    "direction": "ltr",
-    "header": {
-      "type": "box",
-      "layout": "vertical",
-      "contents": [
-        {
-          "type": "text",
-          "text": "メモを登録しました",
-          "size": "lg",
-          "align": "center",
-          "weight": "bold",
-          "color": "#340AD9"
-        },
-        {
-          "type": "separator"
-        }
-      ]
-    },
-    "body": {
-      "type": "box",
-      "layout": "vertical",
-      "contents": [
-        {
-          "type": "text",
-          "text": text,
-          "size": "lg",
-          "align": "start",
-          "gravity": "top",
-          "color": "#BF0202",
-          "wrap": true
-        },
-        {
-          "type": "separator"
-        }
-      ]
-    }
-  }
-}]).then(function () {
+    var messages = [{
+                   "type": "text",
+                   "text": text
+    }];
+    liff.sendMessages(messages).then(function () {
         liff.closeWindow();
-       }).catch(function (error) {
+    }).catch(function (error) {
         window.alert('Failed to send message ' + error);
-        liff.closeWindow();
     });
 }
+
