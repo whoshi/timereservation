@@ -33,11 +33,11 @@ function sendText(text) {
 }
 
 // LINEトーク画面上でメッセージ送信
-/*
+
 function sendMessages(text) {
     liff.sendMessages([{
-        'type':'text',
-        'text':text
+        'type':  'text',
+        'text':  text
     }]).then(function () {
         
     }).catch(function (error) {
@@ -45,19 +45,4 @@ function sendMessages(text) {
         liff.closeWindow();
     });
 }
-*/
-function sendMessages(text) {
-liff.sendMessages([{
-            type: 'text',
-            text: "テキストメッセージの送信"
-        }, {
-            type: 'sticker',
-            packageId: '2',
-            stickerId: '144'
-        }]).then(function () {
-            window.alert("送信完了");
-        }).catch(function (error) {
-            window.alert("Error sending message: " + error);
-        });
-    
-}
+
