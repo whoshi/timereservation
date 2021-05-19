@@ -35,11 +35,20 @@ $(function ()
        //alert(mes + mes2 + mes3 + mes4 + mes5);
        
        var sendsyrings = mes + mes2 + mes3 + mes4 + mes5;
-       sendText(sendsyrings);  
-	    
+       //sendText(sendsyrings);  
+       var data = {
+                type: "text",
+                text: sendsyrings,
+       };
+       liff.sendMessages([ data ]).then(function () {
+        
+       }).catch(function (error) {
+           window.alert('Failed to send message ' + error);
+           liff.closeWindow();
+       });	    
 	    
       //sendText(inputdata);//To LINE 送信
-       liff.closeWindow(); 
+       //liff.closeWindow(); 
       	
     });
 });
