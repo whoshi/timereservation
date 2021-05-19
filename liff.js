@@ -29,18 +29,13 @@ function sendText(text) {
         //shareTargetPicker(text);
     } else {
         alert(text);
-        liff.sendMessages([
-           {
-             type: 'text',
-             text: 'Hello, World!'
-           }
-        ]):
-        //sendMessages(text);
-        liff.closeWindow();
+        
+        sendMessages(text);
+        //liff.closeWindow();
     }
 }
 function sendMessages(text) {
-    var messages = [{type: text,text: text}];
+    var messages = [{type: 'text',text: text}];
     //var msg1 = "";
     liff.sendMessages(messages).then(function () {
         liff.closeWindow();
