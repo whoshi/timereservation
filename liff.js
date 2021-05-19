@@ -40,7 +40,7 @@ function sendMessages(text) {
     }]).then(function () {
         liff.closeWindow();
     }).catch(function (error) {
-        window.alert('Failed to send message ' + error);
+        window.alert('Failed to send message ' + error.message);
         liff.closeWindow();
     });
 }
