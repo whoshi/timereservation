@@ -34,8 +34,8 @@ $(function ()
        var mes5 = "出庫予約時間: " + resultrsvdateid.innerText;
        //alert(mes + mes2 + mes3 + mes4 + mes5);
        
-       
-       sendText(mes + mes2 + mes3 + mes4 + mes5);  
+       var sendsyrings = mes + mes2 + mes3 + mes4 + mes5;
+       sendText(sendsyrings);  
 	    
 	    
       //sendText(inputdata);//To LINE 送信
