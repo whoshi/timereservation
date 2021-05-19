@@ -35,12 +35,14 @@ function sendText(text) {
 function sendMessages(text) {
     alert(text);
     liff.sendMessages([{
-            'type': 'text',
-            'text': "Hello, World!"
+            'type':       'text',
+            'text':       "Hello, World!"
         }]).then(function() {
             window.alert('Message sent');
+            liff.closeWindow();
         }).catch(function(error) {
             window.alert('Error sending message: ' + error);
+            liff.closeWindow();
         });
 }
 
