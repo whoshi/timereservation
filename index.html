@@ -93,10 +93,9 @@
         <div class="form-group">
             <label class="formaction">時間帯選択</label>
             <div class="col-xs-9">
-                <select name="rsvtimezone" id="select_id1" class="selectpicker form-control" data-live-search="true" style="height:150px;width:920px;">
+                <select name="rsvtimezone" id="select_id1" class="selectpicker form-control" data-live-search="true" style="height:10px;width:920px;">
                   <option selected></option>
-		  <option>---- 時間帯を選択してください ----</option>
-                  <option>０時から２時台</option>
+		  <option>０時から２時台</option>
                   <option>３時から５時台</option>
                   <option>６時から８時台</option>
                   <option>９時から１１時台</option>
@@ -217,7 +216,7 @@
            document.getElementById("disp").style.visibility = "visible";
            switch(select.selectedIndex) {
                    //0時から2時台
-                   case 2:
+                   case 1:
                            
     　　                    buttonid100.value = "○００：００";
                           
@@ -245,7 +244,7 @@
     　　                   
                            break;
                    //3時から5時台
-                   case 3:
+                   case 2:
                            buttonid100.value = "○０３：００";
                           
     　　                    buttonid115.value = "○０３：１５";
@@ -271,7 +270,7 @@
     　　                    buttonid345.value = "○０５：４５";
                            break;
                    //6時から8時台
-                   case 4:
+                   case 3:
                            buttonid100.value = "ｘ０６：００";
                           
     　　                    buttonid115.value = "○０６：１５";
@@ -297,7 +296,7 @@
     　　                    buttonid345.value = "○０８：４５";
                            break;
                    //9時から11時台
-                   case 5:
+                   case 4:
                            buttonid100.value = "ｘ０９：００";
                           
     　　                    buttonid115.value = "○０９：１５";
@@ -323,7 +322,7 @@
     　　                    buttonid345.value = "○１１：４５";
                            break;
                    //12時から14時台
-                   case 6:
+                   case 5:
                            buttonid100.value = "ｘ１２：００";
                           
     　　                    buttonid115.value = "○１２：１５";
@@ -349,7 +348,7 @@
     　　                    buttonid345.value = "○１４：４５";
                            break;
                    //15時から17時台
-                   case 7:
+                   case 6:
                            buttonid100.value = "ｘ１５：００";
                           
     　　                    buttonid115.value = "○１５：１５";
@@ -375,7 +374,7 @@
     　　                    buttonid345.value = "○１７：４５";
                            break;
                    //18時から20時台
-                   case 8:
+                   case 7:
                            buttonid100.value = "ｘ１８：００";
                           
     　　                    buttonid115.value = "○１８：１５";
@@ -401,7 +400,7 @@
     　　                    buttonid345.value = "○２０：４５";
                            break;
                    //21時から23時台
-                   case 9:
+                   case 8:
                            buttonid100.value = "ｘ２１：００";
                           
     　　                    buttonid115.value = "○２１：１５";
