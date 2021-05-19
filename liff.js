@@ -85,20 +85,20 @@ function sendMessages(text) {
     });
 }
 */
-/*
+
 function sendMessages(text) {
     liff.sendMessages([{
         'type': 'text',
         'text': text
     }]).then(function () {
-        liff.closeWindow();
+        //liff.closeWindow();
     }).catch(function (error) {
         window.alert('Failed to send message ' + error);
     });
 }
-*/
+
 // Webブラウザからメッセージ送信
-/*
+
 function shareTargetPicker(text) {
     liff.shareTargetPicker([{
         'type': 'text',
@@ -107,7 +107,7 @@ function shareTargetPicker(text) {
         window.alert('Failed to send message ' + error);
     });
 }
-*/
+
 /* ------------------------------
  表示用の関数
  ------------------------------ */
