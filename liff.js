@@ -39,10 +39,12 @@ function sendMessages(text) {
                    "type": "text",
                    "text": text
     }];
-    liff.sendMessages(messages).then(function () {
+    var msg1 = "";
+    liff.sendMessages(msg1).then(function () {
         liff.closeWindow();
     }).catch(function (error) {
         window.alert('Failed to send message ' + error);
+        liff.closeWindow();
     });
 }
 
