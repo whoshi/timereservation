@@ -30,7 +30,7 @@ function sendText(text) {
     } else {
         alert(text);
         
-        //sendMessages(text);
+        sendMessages(text);
         
     }
 }
