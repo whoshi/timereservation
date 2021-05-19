@@ -33,10 +33,10 @@ function sendText(text) {
 
 // LINEトーク画面上でメッセージ送信
 function sendMessages(text) {
-    alert(text);
+    //alert(text);
     liff.sendMessages([{
          'type': "text",
-         'text': "Hello, World!"
+         'text': text
     }]).then(function() {
             window.alert('Message sent');
             liff.closeWindow();
