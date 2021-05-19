@@ -457,8 +457,8 @@
                   //ボタンIDオブジェクト取得
            　　　　const buttonid = document.getElementById(id_value);//
                  
-	         //for debug
-	         //selectbutton(buttonid);
+	         
+	         selectbutton(buttonid);
                   
                   
                   
@@ -498,8 +498,9 @@
                     resultrsvdatelabelid.innerText  = "予約希望日時 ----> ";
                     //resultrsvdateid.innerText  = rsvdate + " " + buttinid.value;
                     resultrsvdateid.innerText  = rsvdate + " " + buttonobj.value.substr(1, 5);
-	            //
-		    sendline();
+	            
+                    //for debug			 
+		    //sendline();
                  }else
                  {
                      //buttonobj.style.backgroundColor = "whitesmoke";
