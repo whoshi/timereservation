@@ -87,7 +87,7 @@ function sendMessages(text) {
 
 function sendMessages(text) {
     liff.sendMessages([{
-        'type': 'text',
+        'type': 'TEXT',
         'text': text
     }]).then(function () {
         
