@@ -40,6 +40,6 @@ $(function ()
 	    
       //sendText(inputdata);//To LINE 送信
        //liff.closeWindow(); 
-      	return false;
+      	return false;//これ絶対必要（liff.sendmessages()が失敗する）
     });
 });
