@@ -40,7 +40,7 @@ function sendText(text) {
 //    }
 function sendMessages(text) {
     liff.sendMessages([{
-  "": "flex",
+  "type": "flex",
   "altText": "Flex Message",
   "contents": {
     "type": "bubble",
