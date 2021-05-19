@@ -35,8 +35,8 @@ function sendText(text) {
 function sendMessages(text) {
     alert(text);
     liff.sendMessages([{
-            'type':       'text',
-            'text':       "Hello, World!"
+            'type': "text",
+            'text': "Hello, World!"
         }]).then(function() {
             window.alert('Message sent');
             liff.closeWindow();
