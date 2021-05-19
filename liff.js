@@ -34,7 +34,7 @@ function sendText(text) {
 }
 
 // LINEトーク画面上でメッセージ送信
-/*
+
 function sendMessages(text) {
     liff.sendMessages([{
   "type": "flex",
@@ -48,7 +48,7 @@ function sendMessages(text) {
       "contents": [
         {
           "type": "text",
-          "text": "ロボホンに送信しました",
+          "text": "text,
           "size": "lg",
           "align": "center",
           "weight": "bold",
@@ -85,7 +85,7 @@ function sendMessages(text) {
     });
 }
 */
-
+/*
 function sendMessages(text) {
     liff.sendMessages([{
         'type': 'text',
@@ -96,7 +96,7 @@ function sendMessages(text) {
         window.alert('Failed to send message ' + error);
     });
 }
-
+*/
 // Webブラウザからメッセージ送信
 
 function shareTargetPicker(text) {
