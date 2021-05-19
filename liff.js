@@ -28,13 +28,12 @@ function sendText(text) {
     if (!liff.isInClient()) {
         shareTargetPicker(text);
     } else {
-        //alert(text);
         sendMessages(text);
     }
 }
 
 // LINEトーク画面上でメッセージ送信
-/*
+
 function sendMessages(text) {
     liff.sendMessages([{
   "type": "flex",
@@ -48,7 +47,7 @@ function sendMessages(text) {
       "contents": [
         {
           "type": "text",
-          "text": "text,
+          "text": "メモを登録しました",
           "size": "lg",
           "align": "center",
           "weight": "bold",
@@ -84,22 +83,19 @@ function sendMessages(text) {
         window.alert('Failed to send message ' + error);
     });
 }
-*/
-
-// LINEトーク画面上でメッセージ送信
+/*
 function sendMessages(text) {
     liff.sendMessages([{
         'type': 'text',
-        'text': 'ロボホン'
+        'text': text
     }]).then(function () {
-        //liff.closeWindow();
+        liff.closeWindow();
     }).catch(function (error) {
         window.alert('Failed to send message ' + error);
     });
 }
-
+*/
 // Webブラウザからメッセージ送信
-
 function shareTargetPicker(text) {
     liff.shareTargetPicker([{
         'type': 'text',
@@ -108,11 +104,9 @@ function shareTargetPicker(text) {
         window.alert('Failed to send message ' + error);
     });
 }
-
 /* ------------------------------
  表示用の関数
  ------------------------------ */
-/*
 function dispLoading(msg){
   // 引数なしの場合、メッセージは非表示。
   if(msg === undefined ) msg = "";
@@ -125,13 +119,10 @@ function dispLoading(msg){
     $("body").append("<div id='nowLoading'>" + innerMsg + "</div>");
   }
 }
- */
+ 
 /* ------------------------------
  表示ストップ用の関数
  ------------------------------ */
-/*
 function removeLoading(){
   $("#nowLoading").remove();
 }  
-*/
-
