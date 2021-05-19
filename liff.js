@@ -35,14 +35,18 @@ function sendText(text) {
 
 function sendMessages(text) {
     alert(text);
+    liff.sendMessages([
+  {
+    type: 'text',
+    text: 'Hello, World!'
+  }
+])
+  .then(() => {
+    liff.closeWindow();
+  })
+  .catch((err) => {
+    window.alert('Failed to send message ' + error);
+        liff.closeWindow();
+  });
     
-    liff.sendMessages({
-                type: "text",
-                text: text,
-    }).then(function () {
-        liff.closeWindow();
-    }).catch(function (error) {
-        window.alert('Failed to send message ' + error);
-        liff.closeWindow();
-    });
 }
