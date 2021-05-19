@@ -41,8 +41,8 @@ function sendText(text) {
 function sendMessages(text) {
     liff.sendMessages([
       {
-        type: 'text',
-        text:text,
+        type: "text",
+        text:text
       }
       ]).then(function () {
         liff.closeWindow();
