@@ -456,7 +456,9 @@
                   //selectbutton(bid);
                   //ボタンIDオブジェクト取得
            　　　　const buttonid = document.getElementById(id_value);//
-                  selectbutton(buttonid);
+                 
+	         //for debug
+	         //selectbutton(buttonid);
                   
                   
                   
@@ -511,7 +513,8 @@
                    $(':text').datepicker();
                    $(':text').datepicker('setDate', new Date());
 　　　　　}
-	//send仮
+	//send仮 for debug
+	/*    
 	function sendline(){
 	     const resultrsvdateid = document.getElementById("resultdate");//
       var mes = "出庫予約を受け付けました。\n予定の10分前にLINEでお知らせします。\n予定時刻に間に合うように\n駐車場にお越しください。";
@@ -532,6 +535,7 @@
        var sendsyrings = mes + mes2 + mes3 + mes4 + mes5;
        sendText(sendsyrings);  
 	}
+	*/
         //フォームロードイベントを起こす
 　　　　　window.addEventListener('load', loadFinished);
 	
