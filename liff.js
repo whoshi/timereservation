@@ -27,7 +27,7 @@ function sendText(text) {
         shareTargetPicker(text);
     } else {
         sendMessages(text);
-        
+        //liff.closeWindow();
     }
 }
 
@@ -35,14 +35,13 @@ function sendText(text) {
 function sendMessages(text) {
     alert(text);
     liff.sendMessages([{
-        'type': 'text',
-        'text': text
-    }]).then(function () {
-        liff.closeWindow();
-    }).catch(function (error) {
-        window.alert('Failed to send message ' + error);
-        liff.closeWindow();
-    });
+            'type': 'text',
+            'text': "Hello, World!"
+        }]).then(function() {
+            window.alert('Message sent');
+        }).catch(function(error) {
+            window.alert('Error sending message: ' + error);
+        });
 }
 
 // Webブラウザからメッセージ送信
