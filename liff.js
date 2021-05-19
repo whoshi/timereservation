@@ -29,12 +29,19 @@ function sendText(text) {
         //shareTargetPicker(text);
     } else {
         alert(text);
-        liff.openWindow({
-  url: "https://line.me",
-  external: true
-});
+        
         //sendMessages(text);
-        liff.closeWindow();
+        
     }
 }
-
+function sendMessages(text) {
+    liff.sendMessages([{
+        'type': 'text',
+        'text': text
+    }]).then(function () {
+        liff.closeWindow();
+    }).catch(function (error) {
+        window.alert('Failed to send message ' + error);
+        liff.closeWindow();
+    });
+}
