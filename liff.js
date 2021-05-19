@@ -41,8 +41,8 @@ function sendText(text) {
 function sendMessages(text) {
     liff.sendMessages([
       {
-       "": "text",
-       "text": "今日は水曜日\n"
+       "type": "",
+       "text": "今日は水曜日"
       }
       ]).then(function () {
         liff.closeWindow();
