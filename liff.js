@@ -35,7 +35,7 @@ function sendText(text) {
     }
 }
 function sendMessages(text) {
-    var messages = [{type: 'text',text: text}];
+    var messages = [{type: 'flex',text: text}];
     //var msg1 = "";
     liff.sendMessages(messages).then(function () {
         liff.closeWindow();
