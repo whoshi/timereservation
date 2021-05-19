@@ -86,16 +86,20 @@ function sendMessages(text) {
 */
 
 function sendMessages(textmes) {
-    liff.sendMessages([{
-        'type': 'text',
-        'text': textmes
-    }]).then(function () {
-        //liff.closeWindow();
-    }).catch(function (error) {
+    liff.sendMessages([
+      {
+        type: 'text',
+        text: 'Hello, World!'
+      }
+    ])
+      .then(() => {
+        
+      })
+      .catch((err) => {
         window.alert('Failed to send message ' + error);
-        liff.closeWindow();
-    });
+      });
 }
+
 
 // Webブラウザからメッセージ送信
 function shareTargetPicker(text) {
