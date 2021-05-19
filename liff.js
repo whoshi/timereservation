@@ -28,7 +28,7 @@ function sendText(text) {
     if (!liff.isInClient()) {
         shareTargetPicker(text);
     } else {
-        alert(text);
+        //alert(text);
         sendMessages(text);
     }
 }
@@ -90,9 +90,9 @@ function sendMessages(text) {
 function sendMessages(text) {
     liff.sendMessages([{
         'type': 'text',
-        'text': text
+        'text': 'ロボホン'
     }]).then(function () {
-        liff.closeWindow();
+        //liff.closeWindow();
     }).catch(function (error) {
         window.alert('Failed to send message ' + error);
     });
