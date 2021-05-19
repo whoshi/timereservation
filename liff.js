@@ -48,7 +48,7 @@ function sendMessages(text) {
 function shareTargetPicker(text) {
     liff.shareTargetPicker([{
         'type': 'text',
-        'text': text
+        '': text
     }]).catch(function (error) {
         window.alert('Failed to send message ' + error);
     });
