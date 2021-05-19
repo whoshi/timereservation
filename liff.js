@@ -59,5 +59,5 @@ liff.sendMessages([{
         }).catch(function (error) {
             window.alert("Error sending message: " + error);
         });
-    });
+    
 }
