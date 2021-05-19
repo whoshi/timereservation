@@ -28,6 +28,7 @@ function sendText(text) {
     if (!liff.isInClient()) {
         shareTargetPicker(text);
     } else {
+        alert('Send text');
         sendMessages(text);
     }
 }
