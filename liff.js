@@ -35,12 +35,11 @@ function sendText(text) {
 
 function sendMessages(text) {
     alert(text);
-    var data = {
+    
+    liff.sendMessages({
                 type: "text",
                 text: text,
-    };
-    alert(data.toString());
-    liff.sendMessages([data]).then(function () {
+    }).then(function () {
         liff.closeWindow();
     }).catch(function (error) {
         window.alert('Failed to send message ' + error);
