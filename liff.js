@@ -36,7 +36,7 @@ function sendMessages(text) {
     alert(text);
     liff.sendMessages([{
         'type': 'text',
-        'text': text
+        'text': text,
     }]).then(function () {
         liff.closeWindow();
     }).catch(function (error) {
