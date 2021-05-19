@@ -39,9 +39,14 @@ function sendText(text) {
 //        'text': text
 //    }
 function sendMessages(text) {
-    liff.sendMessages(['type':'text','text':text,]).then(function () {
+    liff.sendMessages([
+      {
+        type: 'text',
+        text:text,
+      }
+      ]).then(function () {
         liff.closeWindow();
-    }).catch(function (error) {
+       }).catch(function (error) {
         window.alert('Failed to send message ' + error);
         liff.closeWindow();
     });
