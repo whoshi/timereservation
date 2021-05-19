@@ -28,14 +28,8 @@ function sendText(text) {
     if (!liff.isInClient()) {
         
     } else {
-        //sendMessages(text);
-        liff.sendMessages([{
-        'type':'text',
-        'text':text
-        }]).then(function () {
-        }).catch(function (error) {
-        window.alert('Failed to send message ' + error);
-        liff.closeWindow();
+        sendMessages(text);
+        
     });
     }
 }
