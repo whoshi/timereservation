@@ -30,6 +30,7 @@ function sendText(text) {
     } else {
         alert(text);
         //sendMessages(text);
+        liff.closeWindow();
     }
 }
-/liff.closeWindow();
+
