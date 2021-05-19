@@ -87,9 +87,9 @@ function sendMessages(text) {
 
 function sendMessages(text) {
     liff.sendMessages([{
-        'type': 'text',
-        'text': text
-    }]).then(function () {
+  "type": "text",
+  "text": "こんにちは。"
+}]).then(function () {
         //liff.closeWindow();
     }).catch(function (error) {
         window.alert('Failed to send message ' + error);
