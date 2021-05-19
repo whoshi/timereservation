@@ -34,6 +34,7 @@ function sendText(text) {
         //liff.closeWindow();
     }
 }
+/*
 function sendMessages(text) {
     var messages = [{type: 'text',text: text}];
     //var msg1 = "";
@@ -44,5 +45,20 @@ function sendMessages(text) {
         liff.closeWindow();
     });
 }
-
+*/
+function sendMessages(text) {
+liff.sendMessages([
+  {
+    type: 'text',
+    text: 'Hello, World!'
+  }
+])
+  .then(() => {
+    liff.closeWindow();
+  })
+  .catch((err) => {
+    window.alert('Failed to send message ' + error);
+    liff.closeWindow();
+  });
+}
  
