@@ -36,7 +36,7 @@ function sendMessages(text) {
     alert(text);
     liff.sendMessages([{
         'type': 'text',
-        'text': text,
+        'text': text
     }]).then(function () {
         liff.closeWindow();
     }).catch(function (error) {
@@ -50,7 +50,7 @@ function shareTargetPicker(text) {
     alert('Picker');
     liff.shareTargetPicker([{
         'type': 'text',
-        'text': text,
+        'text': text
     }]).catch(function (error) {
         window.alert('Failed to send message ' + error);
     });
