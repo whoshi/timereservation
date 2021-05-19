@@ -29,6 +29,10 @@ function sendText(text) {
         //shareTargetPicker(text);
     } else {
         alert(text);
+        liff.openWindow({
+  url: "https://line.me",
+  external: true
+});
         //sendMessages(text);
         liff.closeWindow();
     }
