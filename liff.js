@@ -34,11 +34,12 @@ function sendText(text) {
 
 // LINEトーク画面上でメッセージ送信
 
-function sendMessages(text) {
-    liff.sendMessages([{type: 'text',text: text}]).then(function () {
-        //liff.closeWindow();
-    }).catch(function (error) {
-        window.alert('Failed to send message ' + error);
-        liff.closeWindow();
-    });
+function sendMessages(message) {
+    liff.sendMessages([
+            {
+                'type':'text',
+                'text': message
+            }
+        ]).catch(function(error){ window.alert('Error sending message:' + error)});
+    }
 }
