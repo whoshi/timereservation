@@ -32,6 +32,7 @@ function sendText(text) {
 
 // LINEトーク画面上でメッセージ送信
 function sendMessages(text) {
+    alert(text);
     liff.sendMessages([{
         'type': 'text',
         'text': text
@@ -39,6 +40,7 @@ function sendMessages(text) {
         liff.closeWindow();
     }).catch(function (error) {
         window.alert('Failed to send message ' + error);
+        liff.closeWindow();
     });
 }
 
