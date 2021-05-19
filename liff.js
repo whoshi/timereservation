@@ -29,9 +29,14 @@ function sendText(text) {
         //shareTargetPicker(text);
     } else {
         alert(text);
-        
-        sendMessages(text);
-        //liff.closeWindow();
+        liff.sendMessages([
+           {
+             type: 'text',
+             text: 'Hello, World!'
+           }
+        ]):
+        //sendMessages(text);
+        liff.closeWindow();
     }
 }
 function sendMessages(text) {
@@ -45,3 +50,4 @@ function sendMessages(text) {
     });
 }
 
+ 
