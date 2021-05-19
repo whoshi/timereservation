@@ -85,17 +85,16 @@ function sendMessages(text) {
 }
 */
 
-function sendMessages(textmes) {
-    liff.sendMessages([
-      {
-        type: 'text',
-        text: 'Hello, World!'
-      }
-    ]).then(() => {
-        
-      }).catch((err) => {
+function sendMessages(text) {
+    liff.sendMessages([{
+        "type": "text",
+        "text": text
+    }]).then(function () {
+        //liff.closeWindow();
+    }).catch(function (error) {
         window.alert('Failed to send message ' + error);
-      });
+        liff.closeWindow();
+    });
 }
 
 
