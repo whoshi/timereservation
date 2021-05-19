@@ -26,7 +26,7 @@ function initializeLiff(liffId) {
 
 function sendText(text) {
     if (!liff.isInClient()) {
-        shareTargetPicker(text);
+        
     } else {
         sendMessages(text);
     }
@@ -34,48 +34,14 @@ function sendText(text) {
 
 // LINEトーク画面上でメッセージ送信
 
-
-
 function sendMessages(text) {
     liff.sendMessages([{
-                         "type": "text",
-                         "text": "こんにちは。"
-                        }]).then(function () {
-        //liff.closeWindow();
-                        }).catch(function (error) {
-                             window.alert('Failed to send message ' + error);
-                             liff.closeWindow();
-    });
-}
-
-// Webブラウザからメッセージ送信
-function shareTargetPicker(text) {
-    liff.shareTargetPicker([{
         'type': 'text',
         'text': text
-    }]).catch(function (error) {
+    }]).then(function () {
+        //liff.closeWindow();
+    }).catch(function (error) {
         window.alert('Failed to send message ' + error);
+        liff.closeWindow();
     });
 }
-/* ------------------------------
- 表示用の関数
- ------------------------------ */
-function dispLoading(msg){
-  // 引数なしの場合、メッセージは非表示。
-  if(msg === undefined ) msg = "";
-  
-  // 画面表示メッセージを埋め込み
-  var innerMsg = "<div id='innerMsg'>" + msg + "</div>";  
-  
-  // ローディング画像が非表示かどうかチェックし、非表示の場合のみ出力。
-  if($("#nowLoading").length == 0){
-    $("body").append("<div id='nowLoading'>" + innerMsg + "</div>");
-  }
-}
- 
-/* ------------------------------
- 表示ストップ用の関数
- ------------------------------ */
-function removeLoading(){
-  $("#nowLoading").remove();
-}  
