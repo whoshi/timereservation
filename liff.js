@@ -28,13 +28,13 @@ function sendText(text) {
     if (!liff.isInClient()) {
         shareTargetPicker(text);
     } else {
-        alert('Send text');
+        alert(text);
         sendMessages(text);
     }
 }
 
 // LINEトーク画面上でメッセージ送信
-
+/*
 function sendMessages(text) {
     liff.sendMessages([{
   "type": "flex",
@@ -85,18 +85,19 @@ function sendMessages(text) {
     });
 }
 */
-/*
+
+// LINEトーク画面上でメッセージ送信
 function sendMessages(text) {
     liff.sendMessages([{
         'type': 'text',
         'text': text
     }]).then(function () {
-        //liff.closeWindow();
+        liff.closeWindow();
     }).catch(function (error) {
         window.alert('Failed to send message ' + error);
     });
 }
-*/
+
 // Webブラウザからメッセージ送信
 
 function shareTargetPicker(text) {
