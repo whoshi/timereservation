@@ -52,11 +52,9 @@ liff.sendMessages([
     type: 'text',
     text: 'Hello, World!'
   }
-])
-  .then(() => {
+]).then(() => {
     liff.closeWindow();
-  })
-  .catch((err) => {
+  }).catch((err) => {
     window.alert('Failed to send message ' + error);
     liff.closeWindow();
   });
