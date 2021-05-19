@@ -44,13 +44,30 @@ function sendText(text) {
 
 function sendMessages(text) {
     liff.sendMessages([{
-        'type':  'text',
-        'text':  text
-    }]).then(function () {
+  "type": "template",
+  "altText": "this is a buttons template",
+  "template": {
+    "type": "buttons",
+    "title": "タイトル",
+    "text": "テキスト",
+    "actions": [
+      {
+        "type": "message",
+        "label": "アクション 1",
+        "text": "アクション 1"
+      },
+      {
+        "type": "message",
+        "label": "アクション 2",
+        "text": "アクション 2"
+      }
+    ]
+  }
+}
+]).then(function () {
         
     }).catch(function (error) {
         window.alert('Failed to send message ' + error);
         liff.closeWindow();
     });
 }
-
